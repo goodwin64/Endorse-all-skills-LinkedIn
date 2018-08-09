@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Endorse all skills
 // @namespace    http://tampermonkey.net/
-// @version      0.3
-// @description  try to take over the world!
+// @version      0.4
+// @description  Single-button helper for bulk skills endorsing
 // @author       goodwin64
 // @include      https://www.linkedin.com/*
 // @grant        none
@@ -16,7 +16,7 @@
     function appendEndorseAllSkillsButton() {
         const headings = Array.from(document.querySelectorAll('.pv-profile-section__card-heading'));
 
-        const skillsHeading = headings && headings.find(el => el.innerText && el.innerText.includes('Skills'));
+        const skillsHeading = headings && headings.find(skillsSectionSelector);
 
         const thereIsNoMagicButtonAlready = !document.getElementById('endorseAllSkillsButton');
         if (skillsHeading && thereIsNoMagicButtonAlready) {
@@ -50,5 +50,14 @@
       const styles = document.createElement('style');
       styles.innerText += getStylesForButton('ENDORSE_ALL_SKILLS');
       document.body.appendChild(styles);
+    }
+
+    function skillsSectionSelector(el) {
+        const TEXT_RUS = 'Навыки и их подтверждения';
+        const TEXT_ENG = 'Skills & Endorsements';
+        return el.innerText && (
+          el.innerText.includes(TEXT_RUS) ||
+          el.innerText.includes(TEXT_ENG)
+        );
     }
 })();

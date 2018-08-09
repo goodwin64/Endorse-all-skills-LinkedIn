@@ -1,6 +1,8 @@
 # Prerequisites:
 [TamperMonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) (for Google Chrome) *OR* [GreaseMonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) (for Mozilla Firefox) add-on has to be installed in your browser. Seriously, script won't work without this add-on.
 
+Also please take into account this script works only with English or Russian versions of LinkedIn.
+
 # How to install and use:
 1. Visit [GreasyFork](https://greasyfork.org/en/scripts/370784-endorse-all-skills)
 2. Click "Install this script"
