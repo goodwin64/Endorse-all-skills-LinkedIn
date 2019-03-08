@@ -35,7 +35,7 @@
         showMoreBtn && showMoreBtn.click && showMoreBtn.click();
 
         // endorse all
-        const plusButtons = document.querySelectorAll('[data-control-name="endorse"]');
+        const plusButtons = document.querySelectorAll('.pv-skill-entity__featured-endorse-button-shared');
         plusButtons && plusButtons.forEach && plusButtons.forEach(el => el.click && el.click());
     }
 
