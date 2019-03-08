@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Endorse all skills
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  Single-button helper for bulk skills endorsing
 // @author       goodwin64
 // @include      https://www.linkedin.com/*
