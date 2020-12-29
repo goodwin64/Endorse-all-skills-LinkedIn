@@ -53,11 +53,11 @@
     }
 
     function skillsSectionSelector(el) {
-        const TEXT_RUS = 'Навыки и их подтверждения';
-        const TEXT_ENG = 'Skills & Endorsements';
+        const TEXT_RUS = 'Навыки и их подтверждения'.toLowerCase();
+        const TEXT_ENG = 'Skills & Endorsements'.toLowerCase();
         return el.innerText && (
-          el.innerText.includes(TEXT_RUS) ||
-          el.innerText.includes(TEXT_ENG)
+          el.innerText.toLowerCase().includes(TEXT_RUS) ||
+          el.innerText.toLowerCase().includes(TEXT_ENG)
         );
     }
 })();
