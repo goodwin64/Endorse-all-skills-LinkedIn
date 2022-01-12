@@ -35,7 +35,7 @@
         showMoreBtn && showMoreBtn.click && showMoreBtn.click();
 
         // endorse all
-        const plusButtons = document.querySelectorAll('.pv-skill-entity__featured-endorse-button-shared');
+        const plusButtons = document.querySelectorAll('.pv-skill-entity__featured-endorse-button-shared:not(.pv-skill-entity__featured-endorse-button-shared--checked)');
         plusButtons && plusButtons.forEach && plusButtons.forEach(el => el.click && el.click());
     }
 
